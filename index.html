@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Portfolio - A2</title>
+    <!-- 1. ดึง Bootstrap 5 CSS ผ่าน CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- เชื่อมโยงไฟล์ CSS ภายนอก -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+
+    <!-- ส่วนหัวของเว็บไซต์ (Header) -->
+    <header class="bg-primary text-white text-center py-5 shadow-sm mb-4">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Learning Portfolio</h1>
+            <p class="lead mb-0">Assignment 2 - Individual Responsive Learning Portfolio</p>
+        </div>
+    </header>
+
+    <!-- ส่วนเนื้อหาหลัก (Main Content) -->
+    <main class="container my-4">
+        <div class="row g-4">
+            
+            <!-- 1. About Me -->
+            <section id="about" class="col-12 col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h2 class="card-title text-primary h4 mb-3">1. About Me</h2>
+                        <div class="text-center mb-3">
+                            <img src="media/myphoto.jpg" alt="รูปโปรไฟล์ของฉัน" class="img-fluid rounded-circle shadow" style="max-width: 180px; height: auto;">
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><strong>ชื่อ-สกุล:</strong> นายอัฐวุฒิ สามทอง</li>
+                            <li class="list-group-item"><strong>รหัสนักศึกษา:</strong> 6609613473</li>
+                            <li class="list-group-item"><strong>คณะ:</strong> วิทยาศาสตร์และเทคโนโลยี สาขาสถิติ</li>
+                            <li class="list-group-item"><strong>เพลงที่ชอบ:</strong> Love Song</li>
+                            <li class="list-group-item">
+                                <strong>ฟังเพลงโปรดบน YouTube:</strong> 
+                                <a href="https://www.youtube.com/watch?v=a7ms3r-qt0E&list=RDa7ms3r-qt0E&start_radio=1" target="_blank" class="btn btn-sm btn-outline-danger ms-2">▶ คลิกเพื่อฟังเพลง Love Song</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. What I Built -->
+            <section id="what-i-built" class="col-12 col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h2 class="card-title text-primary h4 mb-3">2. What I Built</h2>
+                        <p class="card-text">งาน A2 นี้เป็นการพัฒนาเว็บไซต์ Learning Portfolio ต่อจาก A1 ให้กลายเป็นเว็บไซต์ที่สามารถรองรับการแสดงผลบนอุปกรณ์หลายขนาด (Responsive Web Design) โดยใช้ Bootstrap, Git/GitHub และ GitHub Pages</p>
+                        <p class="card-text"><strong>ส่วนประกอบสำคัญ:</strong> มีการจัดเลย์เอาต์ด้วยระบบ Grid System (Rows & Columns) ของ Bootstrap พร้อมตกแต่งด้วย UI Components เช่น Cards, Buttons และ Responsive Images</p>
+                        <p class="card-text"><strong>การทำงานของ Client และ Server:</strong> ขณะเปิดไฟล์จากเครื่องตัวเอง จะยังคงเป็นการทำงานฝั่ง Client เพียงอย่างเดียว เว็บเบราว์เซอร์จะประมวลผล HTML, CSS และ JavaScript จาก Bootstrap ให้ทันทีโดยไม่ต้องพึ่งพา Backend Server</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. How I Built It -->
+            <section id="how-i-built-it" class="col-12 col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h2 class="card-title text-primary h4 mb-3">3. How I Built It</h2>
+                        <p class="card-text">พัฒนางานนี้โดยประยุกต์ใช้กระบวนการ <strong>Issue-driven workflow</strong> ร่วมกับ Git/GitHub และ Bootstrap 5 ตามขั้นตอนดังนี้:</p>
+                        <ul class="list-group list-group-numbered list-group-flush">
+                            <li class="list-group-item">สร้าง Issues บน GitHub เพื่อวางแผนการทำงานทีละส่วน</li>
+                            <li class="list-group-item">เชื่อมโยง Bootstrap 5 CDN เข้าสู่ระบบ HTML</li>
+                            <li class="list-group-item">จัดโครงสร้าง Layout ใหม่ด้วย Bootstrap Grid System (`container`, `row`, `col-*`)</li>
+                            <li class="list-group-item">ทดสอบ Responsive บนหน้าจอคอมพิวเตอร์ แท็บเล็ต และมือถือ</li>
+                            <li class="list-group-item">Commit และ Push โค้ดขึ้น GitHub เพื่อ Deploy บน GitHub Pages</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. Reflection -->
+            <section id="reflection" class="col-12 col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h2 class="card-title text-primary h4 mb-3">4. Reflection</h2>
+                        <p class="card-text"><strong>ปัญหาหรือความท้าทายที่พบ:</strong> การทำความเข้าใจ Bootstrap Grid System ในช่วงแรก และการปรับแต่งรูปภาพให้ได้ขนาดสมดุลบนทุกหน้าจอ</p>
+                        <p class="card-text"><strong>สิ่งที่ได้เรียนรู้:</strong> เรียนรู้การจัดวางเว็บไซต์ให้รองรับทุกอุปกรณ์ด้วย Responsive Framework และเข้าใจการบริหารจัดการโค้ดแบบ Issue-driven บน GitHub</p>
+                        <p class="card-text"><strong>การพัฒนางานในอนาคต:</strong> อยากเพิ่มลูกเล่น Dark Mode, Animations และการดึงข้อมูลโปรเจกต์ผ่าน JavaScript แบบ Dynamic</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- ส่วนท้ายของเว็บไซต์ (Footer) -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Athawut Samthong. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- 2. ดึง Bootstrap 5 JavaScript ผ่าน CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
